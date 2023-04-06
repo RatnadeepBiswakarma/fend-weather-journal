@@ -2,7 +2,11 @@
   /* Global Variables */
   const apiKey = "82b20c7d14222e3f7f7fe39b3c0a814e&units=imperial"
   const weatherApi = "https://api.openweathermap.org/data/2.5/weather"
-  const severApi = "http://localhost:3000/journals"
+  const domain =
+    window.location.hostname === "localhost"
+      ? "http://localhost:3000"
+      : "https://fend-weather-journal.onrender.com"
+  const severApi = `${domain}/journals`
   const form = document.querySelector("#form")
   const template = document.querySelector("#template")
   const errorEl = document.querySelector("#error-message")
