@@ -50,7 +50,6 @@
     fetch(url)
       .then(res => res.json())
       .then(data => {
-        console.log("data", data)
         if (data.cod === "404") {
           store.error = "Zip code not found, please try with another code"
         } else {
