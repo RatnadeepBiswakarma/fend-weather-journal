@@ -1,0 +1,126 @@
+:root {
+  --color-primary: #ec7f12;
+  --color-secondary: #ffffca;
+  --color-tertiary: #f99c3f;
+  --color-red: #fb4829;
+}
+
+html,
+body {
+  background: var(--color-secondary);
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: "Patrick Hand", cursive;
+  color: #ec7f12;
+  box-sizing: border-box;
+}
+
+#app {
+  padding: 1rem;
+  max-width: 50rem;
+  margin: auto;
+}
+
+.headline {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+
+hr {
+  border: 0;
+  margin: 1.5rem 0 1rem;
+  border-top: 1px solid var(--color-tertiary);
+}
+
+#entries-container h2 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.input-wrapper {
+  margin: 1rem 0;
+}
+
+.label {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+#form {
+  padding-bottom: 2rem;
+  position: relative;
+}
+
+#form input,
+#form textarea,
+#form button,
+.entry-item {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  width: 100%;
+  background-color: var(--color-secondary);
+  border: 1px solid var(--color-primary);
+  border-radius: 10px;
+}
+
+#error-message {
+  position: absolute;
+  bottom: 0.3rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: var(--color-red);
+  font-size: 1rem;
+}
+
+#entries {
+  padding: 0;
+}
+
+#entries .city {
+  margin: 0;
+  font-weight: 400;
+}
+
+.entry-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.entry-item .right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.entry-item .city {
+  font-size: 1.5rem;
+}
+
+.entry-item .temp {
+  font-size: 2rem;
+}
+
+.entry-item .delete-button {
+  width: 4rem;
+}
+
+#form button {
+  font-size: 1.5rem;
+  background-color: var(--color-tertiary);
+  color: var(--color-secondary);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-tertiary);
+}
