@@ -1,10 +1,13 @@
 # Weather-Journal App Project
 
 ## Overview
-This project requires you to create an asynchronous web app that uses Web API and user data to dynamically update the UI. 
 
-## Instructions
-This will require modifying the `server.js` file and the `website/app.js` file. You can see `index.html` for element references, and once you are finished with the project steps, you can use `style.css` to style your application to customized perfection.
+![Weather journal app demo image](https://i.imgur.com/Tq7V0QW.png)
 
-## Extras
-If you are interested in testing your code as you go, you can use `tests.js` as a template for writing and running some basic tests for your code.
+Weather journal app for udacity scholarship. It creates new journal entry after fetching weather data from open weather.
+
+## Local Setup
+
+1. Install dependencies by running `npm install`
+2. Run `node server.js` to start a local server
+3. visit `http://localhost:3000/` to see the app live
